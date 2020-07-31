@@ -136,9 +136,13 @@ header ul {
         box-sizing: border-box;
     }
 
-    #banner {
+    .six-four-container {
         display: flex;
         justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    #banner {
         align-items: center;
     }
 
@@ -177,7 +181,6 @@ header ul {
 
 .sidecard .text-container {
     padding: 32px 16px;
-    line-height: 2.3;
 }
 
 .sidecard img {
@@ -186,4 +189,32 @@ header ul {
 
 .sidecard a {
     color: #539CE1;
+}
+
+@media only screen and (min-width: 600px) {
+    #articles .main-container {
+        display: block;
+        padding: 32px 24px;
+    }
+
+    #articles .sidecard {
+         width: 100%;
+         flex-direction: row;
+         align-items: center;
+         padding-left: 0    
+    }
+
+    .sidecard picture {
+        width: 35%;
+        padding: 16px 16px;
+    }
+
+    .sidecard .text-container {
+        width: 65%;
+    }
+
+    .sidecard:hover {
+        background-color: #D7D7D7;
+    }
+
 }
