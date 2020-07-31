@@ -110,7 +110,6 @@ header ul {
     color: #ffffff;
     display: block;
     text-align: center;
-    font-weight: bold;
     padding: 8px 0;
 }
 
@@ -127,5 +126,33 @@ header ul {
 }
 
 @media only screen and (min-width: 600px) {
-    
+
+    .six-four-container div:nth-child(1) {
+        width: 60%;
+    }
+
+    .six-four-container div:nth-child(2) {
+        width: 40%;
+        box-sizing: border-box;
+    }
+
+    #banner {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    #banner a {
+        background-color: #4B4B4B;
+    }
+
+    #banner .image-container {
+        margin: 32px 24px;
+    }
+
+    #banner .content {
+        padding-right: 10%;
+    }
+
+
 }
