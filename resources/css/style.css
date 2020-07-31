@@ -127,11 +127,11 @@ header ul {
 
 @media only screen and (min-width: 600px) {
 
-    .six-four-container div:nth-child(1) {
+    .six-four-container > div:nth-child(1) {
         width: 60%;
     }
 
-    .six-four-container div:nth-child(2) {
+    .six-four-container > div:nth-child(2) {
         width: 40%;
         box-sizing: border-box;
     }
@@ -153,6 +153,37 @@ header ul {
     #banner .content {
         padding-right: 10%;
     }
+}
 
+/*ARTICLES*/
 
+#articles .main-container {
+    display: none;
+}
+
+#articles .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px 16px 32px 16px;
+}
+
+#articles .sidecard {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 100%;
+}
+
+.sidecard .text-container {
+    padding: 32px 16px;
+    line-height: 2.3;
+}
+
+.sidecard img {
+    max-width: 100%;
+}
+
+.sidecard a {
+    color: #539CE1;
 }
