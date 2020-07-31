@@ -1,11 +1,44 @@
 html {
-    background-color: white;
+    background-color:#F2F5F5;
     color: #4C4C4C;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
 }
+
+h1, h2, h3 {
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.7rem;
+}
+
+h3 {
+    font-size: 1.4rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+.image-container img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/*HEADER*/
 
 header {
     height: 64px;
+    background-color: #ffffff;
 }
 
 header nav {
@@ -15,11 +48,6 @@ header nav {
 
 header span {
     display: none;
-}
-
-header a {
-    text-decoration: none;
-    color: inherit;
 }
 
 .bold {
@@ -69,4 +97,35 @@ header ul {
         justify-content: flex-start;
         align-items: center;
     }
+}
+
+/*BANNER*/
+
+#banner {
+    background-color: #D7D7D7;
+}
+
+#banner a {
+    background-color: #9A9A9A;
+    color: #ffffff;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    padding: 8px 0;
+}
+
+#banner .content {
+    padding: 32px 16px;
+}
+
+#banner h1 {
+    padding-bottom: 32px;
+}
+
+#banner h3 {
+    padding-bottom: 24px;
+}
+
+@media only screen and (min-width: 600px) {
+    
 }
