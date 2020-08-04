@@ -22,7 +22,8 @@ h3 {
 }
 
 p {
-    font-size: 1rem;
+    font-size: 0.9rem;
+    line-height: 1.7;
 }
 
 .image-container img {
@@ -151,7 +152,7 @@ header ul {
     }
 
     #banner .image-container {
-        margin: 32px 24px;
+        padding: 32px 24px;
     }
 
     #banner .content {
@@ -163,6 +164,20 @@ header ul {
 
 #articles .main-container {
     display: none;
+    padding: 32px 24px;
+}
+
+#articles .main-container img {
+    padding-bottom: 32px;
+}
+
+#articles .main-container h2,
+#articles .main-container p:not(.signature) {
+    padding-bottom: 24px;
+}
+
+.signature {
+    font-size: 0.75rem;
 }
 
 #articles .content {
@@ -191,10 +206,14 @@ header ul {
     color: #539CE1;
 }
 
+.sidecard h3, 
+.sidecard p {
+    margin-bottom: 8px;
+}
+
 @media only screen and (min-width: 600px) {
     #articles .main-container {
         display: block;
-        padding: 32px 24px;
     }
 
     #articles .sidecard {
