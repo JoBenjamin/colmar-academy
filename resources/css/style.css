@@ -235,5 +235,30 @@ header ul {
     .sidecard:hover {
         background-color: #D7D7D7;
     }
+}
 
+/*START LEARNING*/
+
+#start-learning {
+    padding: 32px 16px;
+}
+
+#start-learning h2 {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+#start-learning ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#start-learning li {
+    background-color: #D7D7D7;
+    padding: 24px 16px;
+}
+
+#start-learning li:not(:first-child) {
+    margin-top: 8px;
 }
