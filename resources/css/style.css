@@ -28,6 +28,7 @@ p {
 
 .image-container img {
     width: 100%;
+    height: auto;
 }
 
 a {
@@ -257,8 +258,52 @@ header ul {
 #start-learning li {
     background-color: #D7D7D7;
     padding: 24px 16px;
+    margin-top: 8px;
 }
 
-#start-learning li:not(:first-child) {
-    margin-top: 8px;
+#start-learning li:first-child {
+    margin-top: 0;
+}
+
+#start-learning li img,
+#start-learning li p {
+    display: none;
+}
+
+@media only screen and (min-width: 600px) {
+    #start-learning {
+        padding: 32px 72px;
+        background-color: #E9EAEB;
+    }
+
+    #start-learning li:first-child {
+        margin-top: 16px;
+    }
+
+    #start-learning li {
+        background-color: #FFFFFF;
+        padding: 0;
+        flex-basis: 30%;
+        margin: 16px 16px;
+    }
+
+    #start-learning li img,
+    #start-learning li p {
+        display: block;
+    }
+
+    #start-learning ul {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+    #start-learning .text-container {
+        padding: 16px 16px 24px 16px
+    }
+
+    #start-learning h3,
+    #start-learning .courses {
+        margin-bottom: 8px;
+    }
 }
