@@ -366,3 +366,31 @@ header ul {
         padding: 0 24px 24px 24px;
     }
 }
+
+/*FOOTER*/
+
+footer p {
+    padding: 16px 0 16px 24px;
+}
+
+footer ul{
+    display:none;
+}
+
+@media only screen and (min-width: 600px) {
+    footer {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 32px;
+        border-top: 1px solid #D7D7D7;
+    }
+
+    footer ul {
+        display: flex;
+        padding-top: 16px;
+        justify-content: space-around;
+    }
+    footer li {
+        padding: 0 8px;
+    }
+}
