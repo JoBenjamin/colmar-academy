@@ -10,15 +10,15 @@ h1, h2, h3 {
 }
 
 h1 {
-    font-size: 2rem;
+    font-size: 4rem;
 }
 
 h2 {
-    font-size: 1.7rem;
+    font-size: 3rem;
 }
 
 h3 {
-    font-size: 1.4rem;
+    font-size: 1.8rem;
 }
 
 p {
@@ -190,7 +190,7 @@ header ul {
 .content {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
     padding: 16px 16px 32px 16px;
 }
 
@@ -284,19 +284,20 @@ header ul {
 
 @media only screen and (min-width: 600px) {
     #start-learning {
-        padding: 32px 72px;
+        padding: 32px 72px 0px 32px;
         background-color: #E9EAEB;
     }
 
     #start-learning li:first-child {
-        margin-top: 16px;
+        margin-top: 0px;
     }
 
     #start-learning li {
         background-color: #FFFFFF;
         padding: 0;
-        flex-basis: 30%;
-        margin: 16px 16px;
+        flex-basis: 350px;
+        flex-shrink: 0;
+        margin: 0px 16px 32px 16px;
     }
 
     #start-learning li img,
@@ -342,6 +343,10 @@ header ul {
     padding-bottom: 32px;
 }
 
+#thesis h3 {
+    padding-bottom: 8px;
+}
+
 @media only screen and (min-width: 600px) {
 
     #thesis .desktop-title,
@@ -363,7 +368,19 @@ header ul {
     }
 
     #thesis .main-container{
-        padding: 0 24px 24px 24px;
+        padding: 0 24px 8px 24px;
+    }
+
+    .video-container {
+        padding-bottom: 24px;
+    }
+
+    #thesis {
+        padding: 32px 0 0 0;
+    }
+
+    .main-container p {
+        padding-bottom: 0;
     }
 }
 
